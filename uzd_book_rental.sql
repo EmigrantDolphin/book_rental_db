@@ -52,7 +52,7 @@ CREATE TABLE rent_overdue (
     noticed_date date NOT NULL,
     FOREIGN KEY(book_id)
 		REFERENCES books(book_id),
-	FOREIGN KEY(sniper_staff_id)
+	FOREIGN KEY(registered_staff_id)
 		REFERENCES staff(staff_id)
 ) ENGINE=INNODB;
 
